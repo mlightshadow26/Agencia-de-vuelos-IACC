@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['plan'])) {
             echo "Error al reservar" . mysqli_error($conn);
         }
     } else {
-        echo "Plan no reconocido.<br>";
+        echo "Sr. $sql_nombre_cliente, su plan no se encuentra disponible.<br>";
     }
 } elseif ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['plan'])) {
     $plan = $_POST['plan'];
