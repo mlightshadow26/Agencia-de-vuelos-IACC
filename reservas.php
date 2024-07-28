@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['plan'])) {
 
         if (mysqli_query($conn, $sql_reserva)){
             echo "Reserva exitosa; Plan 1 <br>";
-            echo "Se asoció el vuelo ID 1 con el hotel ID 1 al cliente $sql_nombre_cliente";
+            echo "Su vuelo y su hotel han sido reservados sr.$sql_nombre_cliente";
         } else {
             echo "Error al reservar" . mysqli_error($conn);
         }
